@@ -37,7 +37,7 @@ int main() {
 
     printf("Enter password: ");
     fgets(password, sizeof(password), stdin);
-    password[strcspn(password, "\n")] = '\0'; // Удаление символа новой строки
+    password[strcspn(password, "\n")] = '\0';
 
     bruteforce(password);
 
